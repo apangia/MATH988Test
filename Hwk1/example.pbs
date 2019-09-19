@@ -1,0 +1,8 @@
+#PBS -N example
+#PBS -l select=1:ncpus=1:mem=1gb,walltime=00:10:00
+
+module add gcc/4.8.1
+
+cd /home/apangia/MATH\ 988
+echo Hello World from `hostname`
+sleep 30

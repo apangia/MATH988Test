@@ -1,0 +1,10 @@
+#PBS -N batchEx
+#PBS -l select=1:ncpus=1:mem=1gb,walltime=00:10:00
+
+cd /home/apangia/MATH\ 988
+
+module add R/3.6.0
+
+Rscript test.R
+
+echo Hello World
